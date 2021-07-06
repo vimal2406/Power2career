@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- FONTS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,41 +22,29 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="./CSS/head.css">
 
-    <title>Header</title>
+    <title>Home</title>
 </head>
 
 <!---------------------------- Navigation menu---------------------------->
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./img/logo1.png" style="width:140px; height:140px;" alt=" Logo of power2carrer">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link disabled" href="#">HOME </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">COURSES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">CONTACT</a>
-                </li>
-            </ul>
-            <a id="signup" href=" "> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign UP</button></a>
-
-
+    <header>
+        <img class="brand" src="./img/logo1.png" alt="">
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <a id="sign" href="#" role="button">SIGNUP</a>
         </div>
-    </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
     <!---------------------- background Carousal---------------- -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1500">
         <ol class="carousel-indicators">
@@ -103,80 +93,103 @@
             <h4>30 june,2021 </h4>
             <h5>Start date</h5>
         </div>
-        <div class="trans">
-            <img src="./img/la_chalkboard-teacher.svg" class="img-responsive" alt="Logo">
-            <h4>15+ </h4>
-            <h5>Expertise</h5>
-        </div>
     </div>
+
 
 
 
     <!-----------------------    CAROUSAL END---------- -->
 
     <!-- ----------------- About US  --->
-
-    <div class="aboutus-area">
-        <div class="col-xs-12">
-            <div class="col-lg-6  col-sm-6 col-xs-12">
-                <div class="aboutus-image float-left "><img src="./img/about-us.png" alt=""></div>
-            </div>
-            <div>
-                <div class="aboutus-content ">
-                    <h2>
-                        ABOUT US
-                    </h2>
-                    <p>At Power2Career we have our team of dedicated and qualified industry professional and trainers who break down complex concepts into easy to learn modules. The theoretical learning is complemented by hands-on practical learning sessions
-                        on emerging tools and sciences. Post the training sessions, you will get an opportunity to work on a live project applying the theory to practice and also be handed a guanranteed placement opportunity in one of our partner companies.
-
-                    </p>
-
-                </div>
-
-            </div>
+    <div class="about-us">
+        <div class="about-img">
+            <img src="./img/about-us.png" alt="">
+        </div>
+        <div class="about-head">
+            <h6>About us</h6>
+            <p>At Power2Career we have our team of dedicated and qualified industry professional and trainers who break down complex concepts into easy to learn modules. The theoretical learning is complemented by hands-on practical learning sessions on
+                emerging tools and sciences. Post the training sessions, you will get an opportunity to work on a live project applying the theory to practice and also be handed a guanranteed placement opportunity in one of our partner companies. .
+            </p>
         </div>
     </div>
 
+    <!-- -----  About us End  -------------------- -->
+
     <!-- ----------------   OUR COURSES Start ---------------------------------->
     <div class="container">
-        <h2 class="#course-title">OUR COURSES</h2>
+        <h2 class="#course-title text-center">OUR COURSES</h2>
         <div class="card-deck">
             <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="./img/DRFT 1.svg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Engineering & Emerging Sciences</h4>
-                </div>
+                <a href="" class="our-course">
+                    <img class="card-img-top img-fluid" src="../img/finacial.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineering & Emerging Sciences</h5>
+                    </div>
+                </a>
             </div>
             <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="./img/finance image.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"> Finance</h4>
-                </div>
+                <a href="" class="our-course">
+                    <img class="card-img-top img-fluid" src="../img/finacial.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> Finance</h5>
+                    </div>
+                </a>
             </div>
             <div class="w-100 d-none d-sm-block d-md-none">
                 <!-- wrap every 2 on sm-->
             </div>
             <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="./img/supply chain img.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Logistics & Supply Chain Management</h4>
+                <a href="" class="our-course">
+                    <img class="card-img-top img-fluid" src="../img/finacial.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Logistics & Supply Chain Management</h5>
 
-                </div>
-            </div>
-            <div class="w-100 d-none d-sm-block d-md-none">
-                <!-- wrap every 2 on sm-->
+                    </div>
             </div>
             <div class="card mb-4">
-                <img class="card-img-top img-fluid" src="./img/supply chain img.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Logistics & Supply Chain Management</h4>
+                <a href="" class="our-course">
+                    <img class="card-img-top img-fluid" src="../img/finacial.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Logistics & Supply Chain Management</h5>
 
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
     <!-------------- ------------REgister and search course------------------- -->
+    <div id="registration">
+        <div id="registration-div1-contentholder">
+            <div id="registration-div1-contentholder-div1">
+                <h2 id="x">Register now and book <br>your seat until <br> 1st july</h2>
+            </div>
+            <div id="registration-div1-contentholder-div2">
+                <p id="register1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="registration-div1-contentholder-div3">
+                <button id="btn1" class="butto">Register now</button>
+            </div>
+
+        </div>
+
+        <div id="registration-div2-contentholder">
+            <div id="registration-div2-heading">Search For Your Cource</div>
+            <div id="registration-div2-forms">
+                <form action="" id="form">
+                    <input type="text" placeholder="Course Name" class="form1"><br><br>
+                    <input type="text" placeholder="Category" class="form1"><br><br>
+                    <input type="text" placeholder="Degree" class="form1"><br><br>
+                    <button class="butto">Search Course</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--------------------------------     Register ENd    ---------------------->
 
     <!--   Timer Section -->
     <div class="timer">
@@ -189,10 +202,10 @@
         </div>
         <div class="countdown">
             <p id="headline">Stock trading courses will be starting soon!!!</p>
-            <span id="days"></span> Days:
+            <!-- <span id="days"></span>Days:
             <span id="hours"></span>Hours:
             <span id="minutes"></span>Minutes:
-            <span id="seconds"></span>Seconds
+            <span id="seconds"></span>Seconds -->
         </div>
         <div>
             <a href="">
@@ -200,70 +213,28 @@
             </a>
         </div>
     </div>
+    <!-- --------------------------  student testinomial------------------------------------- -->
 
-    <!-- -------------   OUR SERVICES------------------------- -->
-    <div class="row mbr-justify-content-center">
-        <div class="col-lg-6 mbr-col-md-10">
-            <div class="wrap">
-                <div class="ico-wrap">
-                    <img src="./img/Vector (1).png" alt="">
-                    <span class="mbr-iconfont fa-volume-up fa"></span>
-                </div>
-                <div class="text-wrap vcenter">
-                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Top <span>Programs</span>
-                    </h2>
-                    <p class="mbr-fonts-style text1 mbr-text display-6">Top Programs In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
-                </div>
-            </div>
+    <!--       KEY Highlight      -->
+    <div class="header">
+        <p>Key Highlights</p>
+    </div>
+    <div id="key-images">
+        <div class="highlights-images">
+            <img src="./img/key-high1.png" alt="">
+            <p class="images-text"><b>We assured 100% placement <br> assurance</b></p>
         </div>
-        <div class="col-lg-6 mbr-col-md-10">
-            <div class="wrap">
-                <div class="ico-wrap">
-                    <img src="./img/Vector (2).png" alt="">
-                    <span class="mbr-iconfont fa-calendar fa"></span>
-                </div>
-                <div class="text-wrap vcenter">
-                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Indoor
-                        <span>Courses</span>
-                    </h2>
-                    <p class="mbr-fonts-style text1 mbr-text display-6">
-                        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
-                    </p>
-                </div>
-            </div>
+        <div class="highlights-images">
+            <img src="./img/key-high2.png" alt="">
+            <p class="images-text"><b>One-on-one Thesis <br> Supervision</b></p>
         </div>
-        <div class="col-lg-6 mbr-col-md-10">
-            <div class="wrap">
-                <div class="ico-wrap">
-                    <img src="./img/Vector (3).png" alt="">
-                    <span class="mbr-iconfont fa-globe fa"></span>
-                </div>
-                <div class="text-wrap vcenter">
-                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Amazing
-                        <span>Library</span>
-                    </h2>
-                    <p class="mbr-fonts-style text1 mbr-text display-6">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 mbr-col-md-10">
-            <div class="wrap">
-                <div class="ico-wrap">
-                    <img src="./img/Vector (3).png" alt="">
-                    <span class="mbr-iconfont fa-trophy fa"></span>
-                </div>
-                <div class="text-wrap vcenter">
-                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Expetional <span>Professor</span></h2>
-                    <p class="mbr-fonts-style text1 mbr-text display-6">
-                        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
-                    </p>
-                </div>
-            </div>
+        <div class="highlights-images">
+            <img src="./img/key-high3.png" alt="">
+            <p class="images-text"><b>Limitless Potential for <br> Specialisation</b></p>
         </div>
     </div>
 
-    <!-- --------------------------  student testinomial------------------------------------- -->
+    <!-----------------    KEy HIghligh end  --------------->
 
     <div id="testimonials">
         <div id="testimonials-cover">
@@ -328,7 +299,7 @@
         </div>
     </div>
 
-    <!--      --------                        tetonomial End--------------------------- -->
+    <!--      ------------------------------------   tetonomial End--------------------------- -->
 
     <!-- --------------   Collabration ----------------  -->
 
@@ -338,7 +309,7 @@
         </div>
         <div id="institution">
             <p>OUR
-                <span id="institution-label">PARTNERS</span> INSTITUTION</p>
+                <span id="institution-label">Top</span> INTERNS</p>
         </div>
     </div>
     <div class="container-xl">
@@ -440,8 +411,9 @@
                                 <div class="col-sm-3">
                                     <div class="thumb-wrapper">
                                         <div class="thumb-content">
-                                            <h4> Students IIM Rohtak</h4>
+                                            <h4> IIM Rohtak</h4>
                                         </div>
+                                        <br>
                                         <div class="img-box">
                                             <img src="./img/rohtak.png" class="img-fluid" alt="iim rohtak">
                                         </div>
@@ -489,8 +461,9 @@
                                 <div class="col-sm-3">
                                     <div class="thumb-wrapper">
                                         <div class="thumb-content">
-                                            <h4>NMIS BANGLORE ROHTAK</h4>
+                                            <h4>NMIS BANGLORE </h4>
                                         </div>
+                                        <br>
                                         <div class="img-box">
                                             <img src="./img/rohtak.png" class="img-fluid" alt="BANGLORE rohtak">
                                         </div>
@@ -562,33 +535,27 @@
             </div>
         </div>
     </div>
-    <div id="update-div">
-        <div class="arrow-down">
-            <img src="./img/Arrow 2.svg" alt="">
+    <div id="core-update">
+        <div id="core-update-headline">
+            <p>For more information , events , newsletters</p>
         </div>
-        <div id="core-update">
-            <div id="core-update-headline">
-                <p>For further upcoming updates subscribe here</p>
-            </div>
-            <div id="emailnsubscribe">
-                <div id="update-email">
-                    <div>
-                        <p>Email</p>
-                    </div>
-                    <div id="email-input">
-                        <input type="email" placeholder="example: @gmail.com">
-                    </div>
-                </div>
-                <div id="update-subscribe">
-                    <button>Subscribe</button>
+        <div id="emailnsubscribe">
+            <div id="update-email">
+                <!-- <div>
+                    <p>Email</p>
+                </div> -->
+                <div id="email-input">
+                    <input type="email" placeholder="example: @gmail.com">
                 </div>
             </div>
-        </div>
-        <div class="arrow-down">
-            <img src="./img/Arrow 2.svg" alt="">
+            <div id="update-subscribe">
+                <button>Subscribe</button>
+            </div>
         </div>
     </div>
+
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

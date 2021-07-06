@@ -1,0 +1,23 @@
+.page-footer{
+    background: #182f41;
+}
+#footer-icon{
+    color:#f79521 !important;
+}
+#foot-head{
+    color: #ffffff;
+    font-size: 21px;
+}
+#option a,p{
+    color: white !important;
+}
+.list-inline-item i{
+    color: #f79521 !important;
+    font-size: 25px;
+}
+hr{
+    border-top: 1px solid rgba(253, 252, 252, 0.878) !important;
+}
+#copyright{
+    font-size: 11px;
+}
