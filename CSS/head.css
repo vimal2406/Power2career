@@ -487,8 +487,10 @@
                 border: 3px solid black;
                 border-radius: 30px;
                 background-color: #F79521;
-                margin: 1rem 4rem;
-                padding: 0rem 3rem;
+                margin: 3rem 6rem;
+                padding: 1rem 2rem;
+                font-weight: bold;
+                font-size: 18px;
             }
             
             @media only screen and (min-width: 992px) and (max-width: 1200px) {
